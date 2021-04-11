@@ -168,12 +168,14 @@ body {
 .footer .logo {
   color: var(--primary-bg-color);
 }
+.adress {
+  font-style: normal;
+}
 .footer-adress {
   color: var(--primary-bg-color);
 }
 .footer-contacts {
   color: var(--footer-contacts-color);
-  font-style: normal;
 }
 .footer-contacts:hover,
 :focus,
