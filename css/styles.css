@@ -1,9 +1,13 @@
 :root {
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
   --primary-text-color: #757575;
   --primary-title-color: #212121;
   --secondary-color: #2196f3;
+  --first-logo-color: #000000;
+  --btn-active-color: #188ce8;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 
   --primary-letter-spacing: 0.03em;
   --secondary-letter-spacing: 0.02em;
@@ -60,14 +64,14 @@ body {
   letter-spacing: var(--secondary-letter-spacing);
 }
 .logo {
-  font-style: 'Raleway', sans-serif;
-  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  color: var(--first-logo-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 .logo span {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 .nav-item {
   color: var(--primary-title-color);
@@ -119,7 +123,7 @@ body {
 }
 .main-btn:hover,
 :focus {
-  background-color: #188ce8;
+  background-color: var(--btn-active-color);
 }
 
 /* Секция особенности */
@@ -145,7 +149,7 @@ body {
 
 /* Секция команды */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-bg-color);
 }
 .team-title {
   font-weight: 500;
@@ -168,7 +172,8 @@ body {
   color: var(--primary-bg-color);
 }
 .footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
+  font-style: normal;
 }
 .footer-contacts:hover,
 :focus,
@@ -177,6 +182,16 @@ body {
 }
 
 /* ПОРТФОЛИО */
+.portfolio-title {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .portfolio-list-title {
   font-size: 18px;
   line-height: 2;
